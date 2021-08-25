@@ -2,10 +2,9 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-# ==================================================
 
 VPN_IPSEC_PSK='fortex'
-VPN_USER='bokir'
+VPN_USER='fortex'
 VPN_PASSWORD='1'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
