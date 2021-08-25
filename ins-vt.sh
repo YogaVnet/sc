@@ -491,31 +491,31 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O add-ws https://raw.githubusercontent.com/YogaVnet/sc/main/add-ws.sh"
-wget -O add-vless https://raw.githubusercontent.com/YogaVnet/sc/main/add-vless.sh"
-wget -O add-tr https://raw.githubusercontent.com/YogaVnet/sc/main/add-tr.sh"
-wget -O del-ws https://raw.githubusercontent.com/YogaVnet/sc/main/del-ws.sh"
-wget -O del-vless https://raw.githubusercontent.com/YogaVnet/sc/main/del-vless.sh"
-wget -O del-tr https://raw.githubusercontent.com/YogaVnet/sc/main/del-tr.sh"
-wget -O cek-ws https://raw.githubusercontent.com/YogaVnet/sc/main/cek-ws.sh"
-wget -O cek-vless https://raw.githubusercontent.com/YogaVnet/sc/main/cek-vless.sh"
-wget -O cek-tr https://raw.githubusercontent.com/YogaVnet/sc/main/cek-tr.sh"
-wget -O renew-ws https://raw.githubusercontent.com/YogaVnet/sc/main/renew-ws.sh"
-wget -O renew-vless https://raw.githubusercontent.com/YogaVnet/sc/main/renew-vless.sh"
-wget -O renew-tr https://raw.githubusercontent.com/YogaVnet/sc/main/renew-tr.sh"
+wget -O addws https://raw.githubusercontent.com/YogaVnet/sc/main/addws.sh"
+wget -O addvless https://raw.githubusercontent.com/YogaVnet/sc/main/addvless.sh"
+wget -O addtr https://raw.githubusercontent.com/YogaVnet/sc/main/addtr.sh"
+wget -O delws https://raw.githubusercontent.com/YogaVnet/sc/main/delws.sh"
+wget -O delvless https://raw.githubusercontent.com/YogaVnet/sc/main/delvless.sh"
+wget -O deltr https://raw.githubusercontent.com/YogaVnet/sc/main/deltr.sh"
+wget -O cekws https://raw.githubusercontent.com/YogaVnet/sc/main/cekws.sh"
+wget -O cekvless https://raw.githubusercontent.com/YogaVnet/sc/main/cekvless.sh"
+wget -O cektr https://raw.githubusercontent.com/YogaVnet/sc/main/cektr.sh"
+wget -O renewws https://raw.githubusercontent.com/YogaVnet/sc/main/renewws.sh"
+wget -O renewvless https://raw.githubusercontent.com/YogaVnet/sc/main/renewvless.sh"
+wget -O renewtr https://raw.githubusercontent.com/YogaVnet/sc/main/renewtr.sh"
 wget -O certv2ray https://raw.githubusercontent.com/YogaVnet/sc/main/cert.sh"
-chmod +x add-ws
-chmod +x add-vless
-chmod +x add-tr
-chmod +x del-ws
-chmod +x del-vless
-chmod +x del-tr
-chmod +x cek-ws
-chmod +x cek-vless
-chmod +x cek-tr
-chmod +x renew-ws
-chmod +x renew-vless
-chmod +x renew-tr
+chmod +x addws
+chmod +x addvless
+chmod +x addtr
+chmod +x delws
+chmod +x delvless
+chmod +x deltr
+chmod +x cekws
+chmod +x cekvless
+chmod +x cektr
+chmod +x renewws
+chmod +x renewvless
+chmod +x renewtr
 chmod +x certv2ray
 cd
 rm -f ins-vt.sh
