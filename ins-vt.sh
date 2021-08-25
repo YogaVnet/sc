@@ -491,19 +491,19 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O addws https://raw.githubusercontent.com/YogaVnet/sc/main/addws.sh"
-wget -O addvless https://raw.githubusercontent.com/YogaVnet/sc/main/addvless.sh"
-wget -O addtr https://raw.githubusercontent.com/YogaVnet/sc/main/addtr.sh"
-wget -O delws https://raw.githubusercontent.com/YogaVnet/sc/main/delws.sh"
-wget -O delvless https://raw.githubusercontent.com/YogaVnet/sc/main/delvless.sh"
-wget -O deltr https://raw.githubusercontent.com/YogaVnet/sc/main/deltr.sh"
-wget -O cekws https://raw.githubusercontent.com/YogaVnet/sc/main/cekws.sh"
-wget -O cekvless https://raw.githubusercontent.com/YogaVnet/sc/main/cekvless.sh"
-wget -O cektr https://raw.githubusercontent.com/YogaVnet/sc/main/cektr.sh"
-wget -O renewws https://raw.githubusercontent.com/YogaVnet/sc/main/renewws.sh"
-wget -O renewvless https://raw.githubusercontent.com/YogaVnet/sc/main/renewvless.sh"
-wget -O renewtr https://raw.githubusercontent.com/YogaVnet/sc/main/renewtr.sh"
-wget -O certv2ray https://raw.githubusercontent.com/YogaVnet/sc/main/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/YogaVnet/sc/main/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/YogaVnet/sc/main/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/YogaVnet/sc/main/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/YogaVnet/sc/main/delws.sh"
+wget -O delvless "https://raw.githubusercontent.com/YogaVnet/sc/main/delvless.sh"
+wget -O deltr "https://raw.githubusercontent.com/YogaVnet/sc/main/deltr.sh"
+wget -O cekws "https://raw.githubusercontent.com/YogaVnet/sc/main/cekws.sh"
+wget -O cekvless "https://raw.githubusercontent.com/YogaVnet/sc/main/cekvless.sh"
+wget -O cektr "https://raw.githubusercontent.com/YogaVnet/sc/main/cektr.sh"
+wget -O renewws "https://raw.githubusercontent.com/YogaVnet/sc/main/renewws.sh"
+wget -O renewvless "https://raw.githubusercontent.com/YogaVnet/sc/main/renewvless.sh"
+wget -O renewtr "https://raw.githubusercontent.com/YogaVnet/sc/main/renewtr.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/YogaVnet/sc/main/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr
