@@ -15,10 +15,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.fortex.live
-organizationalunit=www.fortex.live
-commonname=www.fortex.live
-email=admin@fortex.live
+organization=www.pengkik.xyz
+organizationalunit=www.pengkik.xyz
+commonname=www.pengkik.xyz
+email=admin@pengkik.xyz
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/YogaVnet/sc/main/password"
