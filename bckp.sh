@@ -2,7 +2,6 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-fi
 source /var/lib/premium-script/ipvps.conf
 if [[ "$IPS" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
