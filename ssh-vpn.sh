@@ -76,6 +76,11 @@ apt dist-upgrade -y
 # install wget and curl
 apt -y install wget curl
 
+#figlet
+apt-get install figlet -y
+apt-get install ruby -y
+gem install lolcat
+
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
@@ -289,6 +294,23 @@ wget -O ceklim "https://raw.githubusercontent.com/YogaVnet/sc/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/YogaVnet/sc/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/YogaVnet/sc/main/clear-log.sh"
 wget -O cdn "https://raw.githubusercontent.com/YogaVnet/sc/main/cdn.py"
+wget -O change "https://raw.githubusercontent.com/YogaVnet/sc/main/change.sh"
+wget -O ltp "https://raw.githubusercontent.com/YogaVnet/sc/main/ltp.sh"
+wget -O portovpn "https://raw.githubusercontent.com/YogaVnet/sc/main/portovpn.sh"
+wget -O portsquid "https://raw.githubusercontent.com/YogaVnet/sc/main/portsquid.sh"
+wget -O portssl "https://raw.githubusercontent.com/YogaVnet/sc/main/portssl.sh"
+wget -O portsstp "https://raw.githubusercontent.com/YogaVnet/sc/main/portsstp.sh"
+wget -O porttr "https://raw.githubusercontent.com/YogaVnet/sc/main/porttr.sh"
+wget -O portvless "https://raw.githubusercontent.com/YogaVnet/sc/main/portvless.sh"
+wget -O portwg "https://raw.githubusercontent.com/YogaVnet/sc/main/portwg.sh"
+wget -O portws "https://raw.githubusercontent.com/YogaVnet/sc/main/portws.sh"
+wget -O sssr "https://raw.githubusercontent.com/YogaVnet/sc/main/sssr.sh"
+wget -O ssstp "https://raw.githubusercontent.com/YogaVnet/sc/main/ssstp.sh"
+wget -O tessh "https://raw.githubusercontent.com/YogaVnet/sc/main/tessh.sh"
+wget -O trj "https://raw.githubusercontent.com/YogaVnet/sc/main/trj.sh"
+wget -O vls "https://raw.githubusercontent.com/YogaVnet/sc/main/vls.sh"
+wget -O wgg "https://raw.githubusercontent.com/YogaVnet/sc/main/wgg.sh"
+wget -O wss "https://raw.githubusercontent.com/YogaVnet/sc/main/wss.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
