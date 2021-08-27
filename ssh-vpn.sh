@@ -333,6 +333,24 @@ chmod +x ram
 chmod +x renew
 chmod +x clear-log
 chmod +x cdn
+chmod +x change
+chmod +x ltp
+chmod +x portovpn
+chmod +x portsquid
+chmod +x portssl
+chmod +x portsstp
+chmod +x porttr
+chmod +x portvless
+chmod +x portwg
+chmod +x portws
+chmod +x sssr
+chmod +x ssstp
+chmod +x tessh
+chmod +x trj
+chmod +x vls
+chmod +x wgg
+chmod +x wss
+chmod +x addhost
 
 # remove unnecessary files
 apt -y autoclean
