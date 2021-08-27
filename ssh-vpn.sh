@@ -311,6 +311,7 @@ wget -O trj "https://raw.githubusercontent.com/YogaVnet/sc/main/trj.sh"
 wget -O vls "https://raw.githubusercontent.com/YogaVnet/sc/main/vls.sh"
 wget -O wgg "https://raw.githubusercontent.com/YogaVnet/sc/main/wgg.sh"
 wget -O wss "https://raw.githubusercontent.com/YogaVnet/sc/main/wss.sh"
+wget -O addhost "https://raw.githubusercontent.com/YogaVnet/sc/main/addhost.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
