@@ -22,8 +22,6 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quicksta
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
-cd /root/.acme.sh
-bash acme.sh --register-account -m admin@daponwisang.my.id
 /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 service squid start
@@ -222,7 +220,7 @@ cat> /etc/v2ray/vless.json << END
   },
   "inbounds": [
     {
-      "port": 2086,
+      "port": 2083,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -468,14 +466,16 @@ cat <<EOF > /etc/trojan/uuid.txt
 $uuid
 EOF
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2087 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2095 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2086 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2087 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2095 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2086 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8880 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
@@ -522,4 +522,3 @@ chmod +x certv2ray
 cd
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
-
